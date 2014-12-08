@@ -6,7 +6,7 @@ html, body {
 /* Header Image Background - Change the URL below to your image path (example: ../images/background.jpg) */
 
 .full {
-    /*background: url('../assets/dashain.jpg') no-repeat center center fixed;*/
+    background: url('../assets/exotic_fish.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -23,8 +23,8 @@ html, body {
     margin-right: auto;
     margin-top: 0px; /*For the Top Menu*/
     position: relative;
-    background-color:  #5cb85c;
-    opacity: 0.9;
+    background-color:  #155DFF;
+    opacity: 0.95;
     height: 100%;
 }
 
@@ -35,11 +35,13 @@ html, body {
     position: relative; /*Defines properties relative to its parent*/
     float: right;
     font-size: 1.3em;
+    padding: 20px;
 }
 #title_large{
     /*Used to show large title only when used in desktop environment*/
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size: 48px;
+    padding: 20px;
 }
 #dangling_menu{
     /*border: 3px blue solid;*/
@@ -50,9 +52,10 @@ html, body {
 }
 
 
-.dummy_test{
-    border: 3px red solid;
+/*.dummy_test{
+    border: 3px #E87A0C solid;
     width: 90%;
-    /*height: 600px;*/
+   
 }
+*/
 
