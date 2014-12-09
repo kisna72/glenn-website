@@ -21,9 +21,15 @@
             })
 
             // route for the contact page
-            .when('/contact', {
-                templateUrl : 'pages/contact.html',
+            .when('/services', {
+                templateUrl : 'pages/services.html',
                 controller  : 'contactController'
+            })
+
+            // route for the location page
+            .when('/location', {
+                templateUrl : 'pages/location.html',
+                controller  : 'locationController'
             });
     });
 
@@ -39,6 +45,10 @@
 
     exoticApp.controller('contactController', function($scope) {
         $scope.message = 'Contact us! JK. This is just a demo.';
+    });
+
+    exoticApp.controller('locationController', function($scope) {
+        $scope.message = 'Location to show up Here!!  Until then go to Glenn House';
     });
 
 
