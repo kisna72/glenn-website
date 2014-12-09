@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app> <!-- Use ng-app to bootstrap angularjs -->
+<html lang="en" ng-app="exoticApp"> <!-- Use ng-app to bootstrap angularjs -->
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -33,7 +33,8 @@
       <!-- This section implements the min-width and max-width for your website. -->
       <div id="fixed_menu">
         <!-- This defines Menu fixed to the Top Right corner of your webpage. -->
-        Home | About Us | Services | Location
+        <span > <a href="#about">Home</a> </span>
+        | About Us | Services | Location
       </div>
       <div id="title_large">
         Exotic FishBowl
@@ -103,6 +104,15 @@
           </div><!-- /.container-fluid -->
         </nav>
       </div> <!-- End Extended Menu DIV -->
+
+      <div ng-controller="mainController">
+        {{message}} Msg
+        <!-- angular templating -->
+        <!-- this is where content will be injected -->
+        <div ng-view></div>
+
+
+      </div>
 
     <div> <!-- Start Main Page Content. Only This content changes page after page. -->
 
