@@ -26,6 +26,14 @@ html, body {
     background-color:  #28C24A;
     opacity: 0.95;
     height: 100%;
+    background: #1e5799; /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover,  #1e5799 0%, #207cca 16%, #1f8cc6 30%, #207cca 45%, #2989d8 67%, #7db9e8 99%); /* FF3.6+ */
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#1e5799), color-stop(16%,#207cca), color-stop(30%,#1f8cc6), color-stop(45%,#207cca), color-stop(67%,#2989d8), color-stop(99%,#7db9e8)); /* Chrome,Safari4+ */
+    background: -webkit-radial-gradient(center, ellipse cover,  #1e5799 0%,#207cca 16%,#1f8cc6 30%,#207cca 45%,#2989d8 67%,#7db9e8 99%); /* Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient(center, ellipse cover,  #1e5799 0%,#207cca 16%,#1f8cc6 30%,#207cca 45%,#2989d8 67%,#7db9e8 99%); /* Opera 12+ */
+    background: -ms-radial-gradient(center, ellipse cover,  #1e5799 0%,#207cca 16%,#1f8cc6 30%,#207cca 45%,#2989d8 67%,#7db9e8 99%); /* IE10+ */
+    background: radial-gradient(ellipse at center,  #1e5799 0%,#207cca 16%,#1f8cc6 30%,#207cca 45%,#2989d8 67%,#7db9e8 99%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
 #fixed_menu{
