@@ -19,7 +19,9 @@
     <script src='//maps.googleapis.com/maps/api/js?sensor=false'></script>
     <script src="js/lodash.min.js"></script> <!--To make angular google work-->
     <script src="js/angular-google.min.js"></script>
+<!-- 
     <script src="js/ui-bootstrap.min.js"></script>
+     -->
     <script src="js/ang_routr.js"></script>
 
 
@@ -47,6 +49,7 @@
         Exotic FishBowl
       </div>
 
+
       <div> <!-- Start Extended Menu Div -->
         <!-- Div to contain the Menu -->
         <nav class="navbar navbar-default" role="navigation" id="dangling_menu">
@@ -68,10 +71,10 @@
                 <!-- <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
                 <li><a href="#">Link</a></li> -->
                 <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                  <a sref="#home" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown1 <span class="caret"></span></a>
                   <ul class="dropdown-menu" role="menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
+                    <li><a href="#menu">Action</a></li>
+                    <li><a href="#menu">Another action</a></li>
                     <li><a href="#">Something else here</a></li>
                     <li class="divider"></li>
                     <li><a href="#">Separated link</a></li>
@@ -80,19 +83,7 @@
                   </ul>
                 </li>
                 <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                  <ul class="dropdown-menu" role="menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li class="divider"></li>
-                    <li><a href="#">Separated link</a></li>
-                    <li class="divider"></li>
-                    <li><a href="#">One more separated link</a></li>
-                  </ul>
-                </li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                  <a sref="#home" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown2 <span class="caret"></span></a>
                   <ul class="dropdown-menu" role="menu">
                     <li><a href="#">Action</a></li>
                     <li><a href="#">Another action</a></li>
