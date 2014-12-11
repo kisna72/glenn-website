@@ -16,7 +16,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular-resource.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular-route.min.js"></script>
+    <script src='//maps.googleapis.com/maps/api/js?sensor=false'></script>
+    <script src="js/lodash.min.js"></script> <!--To make angular google work-->
+    <script src="js/angular-google.min.js"></script>
+    <script src="js/ui-bootstrap.min.js"></script>
     <script src="js/ang_routr.js"></script>
+
 
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -33,7 +38,7 @@
       <!-- This section implements the min-width and max-width for your website. -->
       <div id="fixed_menu">
         <!-- This defines Menu fixed to the Top Right corner of your webpage. -->
-        <span > <a href="#">Home</a> </span>| 
+        <span > <a href="#home">Home</a> </span>| 
         <a href="#about">About Us</a> |
         <a href="#services"> Services</a> | 
         <a href="#location">Location </a>
@@ -109,9 +114,11 @@
 
       <div ng-controller="mainController">
         {{message}} Msg
+        <!-- <div ng-include="pages/about.html"></div> -->
         <!-- angular templating -->
         <!-- this is where content will be injected -->
         <div ng-view></div>
+        <ui-gmap-google-map center='map.center' zoom='map.zoom'></ui-gmap-google-map>
 
 
       </div>
@@ -128,7 +135,7 @@
     <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:700' rel='stylesheet' type='text/css'>
 
 
-    <!-- Side Share -->
+    
     <script type="text/javascript">var switchTo5x=true;</script>
     <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
     <script type="text/javascript" src="http://s.sharethis.com/loader.js"></script>
@@ -137,7 +144,7 @@
     var options={ "publisher": "64931cc0-5b54-47dd-a563-ea2c7d62eb82", "position": "left", "ad": { "visible": false, "openDelay": 5, "closeDelay": 0}, "chicklets": { "items": ["facebook", "twitter", "linkedin"]}};
     var st_hover_widget = new sharethis.widgets.hoverbuttons(options);
     </script>
-    <!-- End Side Share -->
+    
 
   </body>
 </html>
