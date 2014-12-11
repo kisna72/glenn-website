@@ -59,7 +59,7 @@ html, body {
     padding-right: 30px;
 }
 
-
+.angular-google-map-container { height: 400px; }
 /*.dummy_test{
     border: 3px #E87A0C solid;
     width: 90%;
