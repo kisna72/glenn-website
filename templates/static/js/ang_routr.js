@@ -2,7 +2,7 @@
 
     // create the module and name it exoticApp
         // also include ngRoute for all our routing needs
-    var exoticApp = angular.module('exoticApp', ['ngRoute', 'uiGmapgoogle-maps']);
+    var exoticApp = angular.module('exoticApp', ['ngRoute','ngAnimate', 'uiGmapgoogle-maps']);
 
     // configure our routes
     exoticApp.config(function($routeProvider) {
