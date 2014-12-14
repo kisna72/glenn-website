@@ -1,6 +1,7 @@
 html, body {
     /*margin-top: 50px;*/ /* Required margin for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
     height: 100%;
+    position: relative;
 }
 
 /* Header Image Background - Change the URL below to your image path (example: ../images/background.jpg) */
@@ -35,21 +36,41 @@ html, body {
     background: radial-gradient(ellipse at center,  #1e5799 0%,#207cca 16%,#1f8cc6 30%,#207cca 45%,#2989d8 67%,#7db9e8 99%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
-
+/*
 #fixed_menu{
-    /* This section defines the fixed menu at the top right side of the webpage. 
+     This section defines the fixed menu at the top right side of the webpage. 
     The Menu is fixed. i.e. absolute position, and absolute height
-    */
-    /*position: relative; Defines properties relative to its parent*/
-    float: right;
-    font-size: 1em;
+    
+     /*Defines properties relative to its parent*/
+    /*float: right;*/
+    /*font-size: 1em;*/
     /*padding: 20px;*/
+
+/*@media handheld{
+    #fixed_menu{
+        font-size: 1.4em;
+    }
 }
+@media screen{
+    #fixed_menu{
+        font-size: 1em;
+        float: right;
+    }
+}*/
+#fixed_menu{
+    color: white;
+    padding-left: 20px;
+}
+#fixed_menu a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
 #title_large{
     /*Used to show large title only when used in desktop environment*/
     font-family: 'Yanone Kaffeesatz', sans-serif;
     /*font-size: 48px;*/
-    /*padding: 20px;*/
+    padding-left: 20px;
 }
 @media handheld{
     #title_large{
