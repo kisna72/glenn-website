@@ -17,7 +17,7 @@ html, body {
     /*This section needs to have a min-width and a max width. 
     If the min width exceeds, it has to expand with the width until max width
     */
-    min-width: 600px; /*This is your Minimum Width = 600*/
+    /*min-width: 600px; /*This is your Minimum Width = 600*/
     max-width: 900px; /*This is your Maximum Width = 1200*/
     margin-left: auto;
     margin-right: auto;
@@ -40,17 +40,28 @@ html, body {
     /* This section defines the fixed menu at the top right side of the webpage. 
     The Menu is fixed. i.e. absolute position, and absolute height
     */
-    position: relative; /*Defines properties relative to its parent*/
+    /*position: relative; Defines properties relative to its parent*/
     float: right;
-    font-size: 1.3em;
-    padding: 20px;
+    font-size: 1em;
+    /*padding: 20px;*/
 }
 #title_large{
     /*Used to show large title only when used in desktop environment*/
     font-family: 'Yanone Kaffeesatz', sans-serif;
-    font-size: 48px;
-    padding: 20px;
+    /*font-size: 48px;*/
+    /*padding: 20px;*/
 }
+@media handheld{
+    #title_large{
+        font-size: 20px;
+    }
+}
+@media screen{
+    #title_large{
+        font-size: 48px;
+    }
+}
+
 #dangling_menu{
     /*border: 3px blue solid;*/
     margin-left: -30px;
