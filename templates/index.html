@@ -33,20 +33,24 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body class="full">
+  <body class="full container">
     <!-- Class full sets full background to your html. Change the location
     of file in glenn.css file -->
     <div class="main_section dummy_test">
-      <!-- This section implements the min-width and max-width for your website. -->
-      <div id="fixed_menu">
-        <!-- This defines Menu fixed to the Top Right corner of your webpage. -->
-        <span > <a href="#home">Home</a> </span>| 
-        <a href="#about">About Us</a> |
-        <a href="#services"> Services</a> | 
-        <a href="#location">Location </a>
-      </div>
-      <div id="title_large">
-        Exotic FishBowl
+      <!-- This section implements the max-width for your website. 
+      There is no min-width to accomodate mobile viewing.
+      Bootstrap's container and .row classes are used.-->
+      <div class="row">
+	      <div id="fixed_menu" class="col-md-6 col-sm-12">
+	        <!-- This defines Menu fixed to the Top Right corner of your webpage. -->
+	        <span > <a href="#home">Home</a> </span>| 
+	        <a href="#about">About Us</a> |
+	        <a href="#services"> Services</a> | 
+	        <a href="#location">Location </a>
+	      </div>
+	      <div id="title_large" class="col-md-6 col-sm-12">
+	        Exotic FishBowl
+	      </div>
       </div>
 
 
@@ -109,7 +113,7 @@
         <!-- angular templating -->
         <!-- this is where content will be injected -->
         <div ng-view></div>
-        <ui-gmap-google-map center='map.center' zoom='map.zoom'></ui-gmap-google-map>
+        <!-- <ui-gmap-google-map center='map.center' zoom='map.zoom'></ui-gmap-google-map> -->
 
 
       </div>
