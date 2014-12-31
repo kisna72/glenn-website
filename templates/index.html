@@ -35,6 +35,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
+
   <body class="full container">
     <!-- Class full sets full background to your html. Change the location
     of file in glenn.css file -->
@@ -42,8 +43,9 @@
       <!-- This section implements the max-width for your website. 
       There is no min-width to accomodate mobile viewing.
       Bootstrap's container and .row classes are used.-->
-      <div class="row">
-	      <div id="fixed_menu" class="col-md-12 col-sm-12"> <!-- If small screen, take full width else half -->
+      <div class="row split_top_banner">
+	      <div id="fixed_menu" class="col-md-6 col-sm-12"> <!-- If small screen, take full width else half -->
+
 	        <!-- This defines Menu fixed to the Top Right corner of your webpage. -->
           
 	        <a ng-href="#home">Home</a> |
@@ -52,9 +54,18 @@
 	        <a ng-href="#location">Location </a>
          
 	      </div>
-	      <div id="title_large" class="col-md-12 col-sm-12">
+
+        <div class="col-md-6 col-sm-12 top_right_locations ">
+          506 TerryParkway, Gretna
+        </div>
+
+
+	      <div id="title_large" class="col-md-6 col-sm-12">
 	        Exotic FishBowl
 	      </div>
+
+
+
       </div>
 
 
