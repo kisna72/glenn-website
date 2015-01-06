@@ -2,7 +2,7 @@
 
     // create the module and name it exoticApp
         // also include ngRoute for all our routing needs
-    var exoticApp = angular.module('exoticApp', ['ngRoute', 'uiGmapgoogle-maps']);
+    var exoticApp = angular.module('exoticApp', ['ngRoute','ngAnimate', 'uiGmapgoogle-maps']);
 
     // configure our routes
     exoticApp.config(function($routeProvider) {
@@ -54,5 +54,13 @@
     exoticApp.controller('locationController', function($scope) {
         $scope.message = 'Location to show up Here!!  Until then go to Glenn House';
 
-        $scope.map = { center: { latitude: 45, longitude: -73 }, zoom: 8 };
+        $scope.map = { center: { latitude: 29.907858, longitude: -90.030365 }, zoom: 14 };
+        $scope.marker = {
+            id:0,
+            coords:{
+                latitude: 29.907858,
+                longitude: -90.030365
+            },
+            // options:{draggable:false},
+        }
     });

@@ -7,22 +7,24 @@
     <title>Exotic Fish Template</title>
 
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/glenn.css" rel="stylesheet">
-    <link href="css/custom_bootstrap.css" rel="stylesheet">
+    <link href="static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="static/css/custom-animations.css" rel="stylesheet">
+    <link href="static/css/glenn.css" rel="stylesheet">
+    <link href="static/css/custom_bootstrap2.css" rel="stylesheet">
     
 
     <!-- Angular Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular-resource.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular-route.min.js"></script>
+    <script src="https://code.angularjs.org/1.3.5/angular-animate.min.js"></script>
     <script src='//maps.googleapis.com/maps/api/js?sensor=false'></script>
-    <script src="js/lodash.min.js"></script> <!--To make angular google work-->
-    <script src="js/angular-google.min.js"></script>
+    <script src="static/js/lodash.min.js"></script> <!--To make angular google work-->
+    <script src="static/js/angular-google.min.js"></script>
 <!-- 
     <script src="js/ui-bootstrap.min.js"></script>
      -->
-    <script src="js/ang_routr.js"></script>
+    <script src="static/js/ang_routr.js"></script>
 
 
 
@@ -33,20 +35,37 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body class="full">
+
+  <body class="full container">
     <!-- Class full sets full background to your html. Change the location
     of file in glenn.css file -->
     <div class="main_section dummy_test">
-      <!-- This section implements the min-width and max-width for your website. -->
-      <div id="fixed_menu">
-        <!-- This defines Menu fixed to the Top Right corner of your webpage. -->
-        <span > <a href="#home">Home</a> </span>| 
-        <a href="#about">About Us</a> |
-        <a href="#services"> Services</a> | 
-        <a href="#location">Location </a>
-      </div>
-      <div id="title_large">
-        Exotic FishBowl
+      <!-- This section implements the max-width for your website. 
+      There is no min-width to accomodate mobile viewing.
+      Bootstrap's container and .row classes are used.-->
+      <div class="row split_top_banner">
+	      <div id="fixed_menu" class="col-md-6 col-sm-12"> <!-- If small screen, take full width else half -->
+
+	        <!-- This defines Menu fixed to the Top Right corner of your webpage. -->
+          
+	        <a ng-href="#home">Home</a> |
+	        <a ng-href="#about">AboutUs</a> |
+	        <a ng-href="#services"> Services</a> |
+	        <a ng-href="#location">Location </a>
+         
+	      </div>
+
+        <div class="col-md-6 col-sm-12 top_right_locations ">
+          506 TerryParkway, Gretna
+        </div>
+
+
+	      <div id="title_large" class="col-md-6 col-sm-12">
+	        Exotic FishBowl
+	      </div>
+
+
+
       </div>
 
 
@@ -104,12 +123,12 @@
       </div> <!-- End Extended Menu DIV -->
 
       <div ng-controller="mainController">
-        {{message}} Msg
+       <!--  {{message}} Msg -->
         <!-- <div ng-include="pages/about.html"></div> -->
         <!-- angular templating -->
         <!-- this is where content will be injected -->
-        <div ng-view></div>
-        <ui-gmap-google-map center='map.center' zoom='map.zoom'></ui-gmap-google-map>
+        <div ng-view class="view_animate"></div>
+        <!-- <ui-gmap-google-map center='map.center' zoom='map.zoom'></ui-gmap-google-map> -->
 
 
       </div>
@@ -122,7 +141,7 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
     <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:700' rel='stylesheet' type='text/css'>
 
 
