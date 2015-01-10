@@ -69,7 +69,7 @@ html, body {
 
 #fixed_menu{
     color: white;
-    padding-left: 20px;
+    /*padding-left: 20px;*/
 }
 #fixed_menu a{
     color: #FFFFFF;
@@ -125,9 +125,19 @@ html, body {
     color:white; /* To change class*/
 }
 .top_right_locations{
-    float:right;
+    /*float:right;*/
+    text-align: right;
 }
-
+.padding_left_zero{
+    padding-left:0px;
+}
+.padding_right_zero{
+    padding-right:0px;
+}
+address a{
+    color: yellow;
+    font-weight: bolder;
+}
 /* slide in from the right */
 @-webkit-keyframes slideInRight {
     from{ 

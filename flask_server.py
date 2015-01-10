@@ -32,4 +32,5 @@ def location_page():
 	return render_template('pages/location.html')
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0')
+    #app.run(host='0.0.0.0') #To make the program available in public IP
+    app.run() #local only

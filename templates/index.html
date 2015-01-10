@@ -44,27 +44,38 @@
       There is no min-width to accomodate mobile viewing.
       Bootstrap's container and .row classes are used.-->
       <div class="row split_top_banner">
-	      <div id="fixed_menu" class="col-md-6 col-sm-12"> <!-- If small screen, take full width else half -->
+        <div class="row col-md-6">
+	      <div id="fixed_menu" class="col-sm-12 padding_left_zero"> <!-- If small screen, take full width else half -->
+	        <!-- This defines Menu fixed to the Top Right corner of your webpage. --> 
+          <div class="col-md-12 ">
+  	        <a ng-href="#home">Home</a> |
+  	        <a ng-href="#about">AboutUs</a> |
+  	        <a ng-href="#services"> Services</a> |
+  	        <a ng-href="#location">Location </a>
+          </div> 
+          <!-- <a ng-href="#test_new">Test New </a> -->
+          <div id="title_large" class="col-sm-12">
+            Exotic FishBowl
+          </div>
 
-	        <!-- This defines Menu fixed to the Top Right corner of your webpage. -->
-          
-	        <a ng-href="#home">Home</a> |
-	        <a ng-href="#about">AboutUs</a> |
-	        <a ng-href="#services"> Services</a> |
-	        <a ng-href="#location">Location </a>
-         
 	      </div>
-
-        <div class="col-md-6 col-sm-12 top_right_locations ">
-          506 TerryParkway, Gretna
+      </div>
+      <!-- There are two addresses because the address on a small screen has to be displayed on the left -->
+        <div class="hidden-xs hidden-sm col-md-6 top_right_locations padding_right_zero">
+          <address>
+            506 TerryParkway,  <br>
+            Gretna, LA, 70058 <br>
+            <a href="tel:+1-504-555-5555"> 504-555-5555</a>
+          </address>
         </div>
 
-
-	      <div id="title_large" class="col-md-6 col-sm-12">
-	        Exotic FishBowl
-	      </div>
-
-
+        <div class="col-sm-12 hidden-lg hidden-md padding_right_zero">
+          <address>
+            506 TerryParkway,  <br>
+            Gretna, LA, 70058 <br>
+            <a href="tel:+1-504-555-5555"> 504-555-5555</a>
+          </address>
+        </div>
 
       </div>
 
@@ -92,7 +103,7 @@
                 <li class="dropdown">
                   <a sref="#home" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown1 <span class="caret"></span></a>
                   <ul class="dropdown-menu" role="menu">
-                    <li><a href="#home">Action</a></li>
+                    <li><a href="#test_new">Test New</a></li>
                     <li><a href="#home">Another action</a></li>
                     <li><a href="#home">Something else here</a></li>
                     <li class="divider"></li>
@@ -104,7 +115,7 @@
                 <li class="dropdown">
                   <a sref="#home" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown2 <span class="caret"></span></a>
                   <ul class="dropdown-menu" role="menu">
-                    <li><a href="#home">Action</a></li>
+                    <li><a href="#test_new">Action</a></li>
                     <li><a href="#home">Another action</a></li>
                     <li><a href="#home">Something else here</a></li>
                     <li class="divider"></li>
