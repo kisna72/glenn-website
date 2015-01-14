@@ -17,11 +17,14 @@ html, body {
 .main_section{
     /*This section needs to have a min-width and a max width. 
     If the min width exceeds, it has to expand with the width until max width
+
+    To generate a custom gradient, go here:
+    http://www.colorzilla.com/gradient-editor/
     */
     /*min-width: 600px; /*This is your Minimum Width = 600*/
     max-width: 900px; /*This is your Maximum Width = 1200*/
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto; 
     margin-top: 0px; /*For the Top Menu*/
     position: relative;
     background-color:  #28C24A;
@@ -57,9 +60,16 @@ html, body {
         float: right;
     }
 }*/
+.split_top_banner{
+    background: none repeat scroll 0% 0% #008AFF;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 #fixed_menu{
     color: white;
-    padding-left: 20px;
+    /*padding-left: 20px;*/
 }
 #fixed_menu a{
     color: #FFFFFF;
@@ -109,6 +119,25 @@ html, body {
     width:100%; */
 }
 
+.hover_finger{
+    cursor: pointer;
+    cursor: hand;
+    color:white; /* To change class*/
+}
+.top_right_locations{
+    /*float:right;*/
+    text-align: right;
+}
+.padding_left_zero{
+    padding-left:0px;
+}
+.padding_right_zero{
+    padding-right:0px;
+}
+address a{
+    color: yellow;
+    font-weight: bolder;
+}
 /* slide in from the right */
 @-webkit-keyframes slideInRight {
     from{ 
@@ -159,7 +188,7 @@ html, body {
 
 
 
-.ng-enter{
+/*.ng-enter{
     -ms-animation: slideInRight 0.5s both ease-in; 
     -webkit-animation: slideInRight 0.5s both ease-in; 
     -moz-animation: slideInRight 0.5s both ease-in; 
@@ -176,3 +205,23 @@ html, body {
     animation: slideOutLeft 0.5s both ease-in; 
     z-index: 9999; 
 }
+*/
+
+/*.ng-enter{
+    -ms-animation: fadeIn 0.5s both ease-in; 
+    -webkit-animation: fadeIn 0.5s both ease-in; 
+    -moz-animation: fadeIn 0.5s both ease-in; 
+    animation: fadeIn 0.5s both ease-in; 
+
+
+    z-index: 8888; 
+}
+.ng-leave{ 
+    -ms-animation: fadeIn 0.5s both ease-in; 
+    -webkit-animation: fadeIn 0.5s both ease-in; 
+    -moz-animation: fadeIn 0.5s both ease-in; 
+
+    animation: fadeIn 0.5s both ease-in; 
+    z-index: 9999; 
+}
+*/

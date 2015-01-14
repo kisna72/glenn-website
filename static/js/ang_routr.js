@@ -34,6 +34,11 @@
             .when('/location', {
                 templateUrl : 'pages/location.html',
                 controller  : 'locationController'
+            })
+            //Glenn : When you make a new route, make sure it doesn't have the ; at the end.
+            .when('/test_new', {
+                templateUrl : 'pages/new_page.html',
+                controller  : 'aboutController'
             });
     });
 
